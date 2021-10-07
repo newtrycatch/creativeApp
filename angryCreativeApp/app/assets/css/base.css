@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fontLight: SegoeProDisplay-Light;
+  --fontSemiBold: SegoeProDisplay-Semibold;
+  --sep: 1em;
+  --half-sep: 0.5em;
+  --radius: 0.25em;
+}
+
+:root {
+  --bcColor: #282828;
+  --dkColor: #1d2021;
+  --chColor: #32302f;
+  --clColor: #3c3836;
+  --frColor: #a89984;
+  --grColor: #689d6a;
+  --glColor: #8ec07c;
+  --ppColor: #d3869b;
+  --pdColor: #b16286;
+  --dgColor: #fb4934;
+}
+
+* {
+  font-family: var(--fontLight);
+}
+
+.body {
+  background-color: var(--bcColor);
+  color: var(--frColor);
+}
+
+.none {
+  border: none;
+  outline: none;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--sep);
+  font-family: var(--fontLight);
+  text-transform: capitalize;
+  color: var(--bcColor);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: var(--radius);
+}
